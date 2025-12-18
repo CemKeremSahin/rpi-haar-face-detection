@@ -52,7 +52,7 @@ Reboot the system after enabling the camera.
 ### 2. Clone the Repository
 
 ```bash
-git clone https://github.com/<your-username>/rpi-face-detection.git
+git clone https://github.com/CemKeremSahin/rpi-haar-face-detection.git
 cd rpi-face-detection
 ```
 
