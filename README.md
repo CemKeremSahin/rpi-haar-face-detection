@@ -103,8 +103,8 @@ rpi-haar-face-detection/
 2. Capture frames as NumPy arrays
 3. Convert frames to grayscale
 4. Detect faces using Haar Cascade classifiers
-5. Draw bounding boxes and overlay FPS
-6. Display frames in real time
+5. Draw bounding boxes 
+
 
 ---
 
