@@ -13,7 +13,7 @@ The application performs real-time face detection using **Picamera2** (libcamera
 - Direct camera access via **Picamera2** (avoids VideoCapture instability)
 - Real-time face detection using OpenCV
 - FPS measurement for performance evaluation
-- Designed for Raspberry Pi 3 / 4
+- Designed for Raspberry Pi 3 
 - Privacy-aware demo assets (faces blurred)
 
 ---
@@ -83,17 +83,16 @@ pip install -r requirements.txt
 ## Project Structure
 
 ```
-rpi-face-detection/
+rpi-haar-face-detection/
 │
-├── main.py                          # Main application
-├── haarcascade_frontalface_default.xml
+├── src/
+│   └── face_detection.py           # Main application
+├── models/
+│   └── haarcascade_frontalface_default.xml
 ├── requirements.txt
 ├── README.md
 ├── benchmarks/
 │   └── performance.md              # FPS and CPU usage results
-├── assets/
-│   └── demo.png                    # Demo image
-└── .gitignore
 ```
 
 ---
