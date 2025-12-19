@@ -111,7 +111,7 @@ rpi-haar-face-detection/
 ## Running the Application
 
 ```bash
-python3 main.py
+python3 src/face_detection.py
 ```
 
 Press **q** to exit the application.
