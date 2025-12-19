@@ -14,7 +14,7 @@ The application performs real-time face detection using **Picamera2** (libcamera
 - Real-time face detection using OpenCV
 - FPS measurement for performance evaluation
 - Designed for Raspberry Pi 3 
-- Privacy-aware demo assets (faces blurred)
+
 
 ---
 
