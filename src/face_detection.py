@@ -33,27 +33,25 @@ face_cascade = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
 
 while True:
 
-    # Kameradan görüntüyü "Numpy Array" olarak al (OpenCV formatı)
 
-    # Bu komut VideoCapture(0)'dan çok daha hızlı ve stabildir.
 
     frame = picam2.capture_array()
 
 
 
-    # Gri tona çevir
+   
 
     gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
 
 
 
-    # Yüzleri bul
+    
 
     faces = face_cascade.detectMultiScale(gray, 1.1, 5, minSize=(30, 30))
 
 
 
-    # Kare çiz
+    
 
     for (x, y, w, h) in faces:
 
@@ -67,7 +65,7 @@ while True:
 
 
 
-    # 'q' ile çık
+    
 
     if cv2.waitKey(1) & 0xFF == ord('q'):
 
