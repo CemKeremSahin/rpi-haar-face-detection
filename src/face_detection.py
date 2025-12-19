@@ -6,9 +6,7 @@ from picamera2 import Picamera2
 
 
 
-# 1. Picamera2'yi Başlat (OpenCV Yerine Bunu Kullanıyoruz)
 
-# Bu kütüphane yeni Raspberry Pi OS ile tam uyumludur.
 
 print("Kamera baslatiliyor... (Cikis icin 'q')")
 
@@ -16,7 +14,7 @@ picam2 = Picamera2()
 
 
 
-# 2. Ayarlar (Bellek dostu 640x480 çözünürlük ve OpenCV için BGR formatı)
+
 
 config = picam2.create_video_configuration(main={"size": (640, 480), "format": "BGR888"})
 
@@ -26,13 +24,12 @@ picam2.start()
 
 
 
-# 3. Yüz Tanıma Modelini Yükle
 
 face_cascade = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
 
 
 
-# 4. Sonsuz Döngü
+
 
 while True:
 
@@ -64,7 +61,7 @@ while True:
 
 
 
-    # Ekranda göster
+
 
     cv2.imshow('Picamera2 Yuz Takibi', frame)
 
